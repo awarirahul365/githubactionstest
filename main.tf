@@ -18,8 +18,6 @@ terraform {
 provider "azurerm" {
   features {
   }
-  skip_provider_registration = true
-  subscription_id = "b437f37b-b750-489e-bc55-43044286f6e1"
 }
 
 
