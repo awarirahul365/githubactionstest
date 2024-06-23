@@ -1,4 +1,4 @@
-name: 'Terraform'
+name: 'Terraformtest'
 
 on:
   push:
@@ -43,7 +43,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -input=false
+      run: terraform plan -var-file="tfalert.vars"
 
      # On push to "master", build or change infrastructure according to Terraform configuration files
     - name: Terraform Apply
