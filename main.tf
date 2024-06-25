@@ -6,14 +6,14 @@ terraform {
       version = "~>3.43.0"
     }
   }
-  backend "azurerm" {
+  /*backend "azurerm" {
     resource_group_name = "rahultestrg"
     storage_account_name = "rahulteststorage365"
     container_name = "terraformstatefile"
     key="tfrealiabilityalerting.tfstate"
     tenant_id = "42f7676c-f455-423c-82f6-dc2d99791af7"
     subscription_id = "b437f37b-b750-489e-bc55-43044286f6e1"
-  }
+  }*/
 }
 provider "azurerm" {
   features {
